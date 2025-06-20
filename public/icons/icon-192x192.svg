@@ -1,6 +1,27 @@
 <svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="192" height="192" rx="24" fill="#f53003"/>
-    <path d="M48 96C48 69.4903 69.4903 48 96 48C122.51 48 144 69.4903 144 96C144 122.51 122.51 144 96 144C69.4903 144 48 122.51 48 96Z" fill="white"/>
-    <path d="M96 64C78.3269 64 64 78.3269 64 96C64 113.673 78.3269 128 96 128C113.673 128 128 113.673 128 96C128 78.3269 113.673 64 96 64ZM96 120C82.7452 120 72 109.255 72 96C72 82.7452 82.7452 72 96 72C109.255 72 120 82.7452 120 96C120 109.255 109.255 120 96 120Z" fill="#f53003"/>
-    <circle cx="96" cy="96" r="8" fill="#f53003"/>
+    <rect width="192" height="192" rx="24" fill="#6366f1"/>
+    
+    <!-- Game Controller Design -->
+    <rect x="32" y="64" width="128" height="64" rx="12" fill="white"/>
+    
+    <!-- Left Side -->
+    <circle cx="56" cy="96" r="12" fill="#6366f1"/>
+    <circle cx="56" cy="96" r="8" fill="white"/>
+    
+    <!-- Right Side -->
+    <circle cx="136" cy="96" r="12" fill="#6366f1"/>
+    <circle cx="136" cy="96" r="8" fill="white"/>
+    
+    <!-- Buttons -->
+    <circle cx="120" cy="80" r="6" fill="#6366f1"/>
+    <circle cx="136" cy="64" r="6" fill="#6366f1"/>
+    <circle cx="152" cy="80" r="6" fill="#6366f1"/>
+    <circle cx="136" cy="96" r="6" fill="#6366f1"/>
+    
+    <!-- D-Pad -->
+    <rect x="72" y="88" width="8" height="16" rx="4" fill="#6366f1"/>
+    <rect x="64" y="96" width="24" height="8" rx="4" fill="#6366f1"/>
+    
+    <!-- Text -->
+    <text x="96" y="140" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">GAME</text>
 </svg> 

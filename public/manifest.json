@@ -1,11 +1,11 @@
 {
-    "name": "Laravel PWA",
-    "short_name": "Laravel PWA",
-    "description": "Uma aplicação Laravel Progressive Web App",
+    "name": "GameStore - Sua Loja de Jogos",
+    "short_name": "GameStore",
+    "description": "GameStore - Sua loja de jogos eletrônicos com informações detalhadas, avaliações e screenshots",
     "start_url": "/",
     "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#f53003",
+    "background_color": "#f9fafb",
+    "theme_color": "#6366f1",
     "orientation": "portrait-primary",
     "scope": "/",
     "lang": "pt-BR",
@@ -59,7 +59,7 @@
             "purpose": "maskable any"
         }
     ],
-    "categories": ["productivity", "utilities"],
+    "categories": ["games", "entertainment"],
     "screenshots": [
         {
             "src": "/screenshots/desktop.png",

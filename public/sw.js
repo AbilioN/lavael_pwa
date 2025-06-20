@@ -1,10 +1,12 @@
-const CACHE_NAME = 'laravel-pwa-v1';
+const CACHE_NAME = 'gamestore-v1';
 const urlsToCache = [
     '/',
-    '/css/app.css',
-    '/js/app.js',
+    '/games',
+    '/search',
     '/manifest.json',
-    '/offline.html'
+    '/offline.html',
+    'https://cdn.tailwindcss.com',
+    'https://fonts.bunny.net/css?family=inter:400,500,600,700'
 ];
 
 // Instalação do Service Worker
@@ -84,7 +86,7 @@ self.addEventListener('sync', (event) => {
 // Notificações push
 self.addEventListener('push', (event) => {
     const options = {
-        body: event.data ? event.data.text() : 'Nova notificação!',
+        body: event.data ? event.data.text() : 'Novos jogos disponíveis na GameStore!',
         icon: '/icons/icon-192x192.png',
         badge: '/icons/icon-72x72.png',
         vibrate: [100, 50, 100],
@@ -95,7 +97,7 @@ self.addEventListener('push', (event) => {
         actions: [
             {
                 action: 'explore',
-                title: 'Ver mais',
+                title: 'Ver jogos',
                 icon: '/icons/icon-192x192.png'
             },
             {
@@ -107,7 +109,7 @@ self.addEventListener('push', (event) => {
     };
 
     event.waitUntil(
-        self.registration.showNotification('Laravel PWA', options)
+        self.registration.showNotification('GameStore', options)
     );
 });
 
